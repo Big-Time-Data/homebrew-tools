@@ -1,0 +1,22 @@
+cask "big-timer" do
+  version "0.1.1"
+  sha256 "88021b36c4e01e4104a46475bef6417557381bc7c74d5c76e218fac6179769a7"
+
+  url "https://github.com/Big-Time-Data/big-timer-releases/releases/download/v#{version}/BigTimer-#{version}.dmg"
+  name "Big-Timer"
+  desc "Menu-bar time tracker that syncs with Toggl"
+  homepage "https://github.com/Big-Time-Data/big-timer-releases"
+
+  auto_updates true
+  depends_on arch: :arm64
+  depends_on macos: :sequoia
+
+  app "BigTimer.app"
+
+  zap trash: [
+    "~/Library/Application Support/BigTimer",
+    "~/Library/Caches/io.bigtimedata.bigtimer",
+    "~/Library/HTTPStorages/io.bigtimedata.bigtimer",
+    "~/Library/Preferences/io.bigtimedata.bigtimer.plist",
+  ]
+end
