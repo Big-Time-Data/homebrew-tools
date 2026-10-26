@@ -5,20 +5,20 @@
 class Mcpq < Formula
   desc "Let an LLM query a customer's warehouse and find the context it needs"
   homepage "https://github.com/Big-Time-Data/mcp-query"
-  version "0.0.18"
+  version "0.0.19"
 
   on_macos do
     if Hardware::CPU.intel?
-      url "https://github.com/Big-Time-Data/homebrew-tools/releases/download/v0.0.18/mcpq_darwin_amd64.tar.gz"
-      sha256 "8bad5f572738eece8bac8a5f44c94aa280cbdc073434bacc41ebe0f7a269b9dc"
+      url "https://github.com/Big-Time-Data/homebrew-tools/releases/download/v0.0.19/mcpq_darwin_amd64.tar.gz"
+      sha256 "336ebf0c57c46a441fba4284c12c441bef552a5af94713a35e90a89f36b5cb8f"
 
       define_method(:install) do
         bin.install "mcpq"
       end
     end
     if Hardware::CPU.arm?
-      url "https://github.com/Big-Time-Data/homebrew-tools/releases/download/v0.0.18/mcpq_darwin_arm64.tar.gz"
-      sha256 "7ecb19c406fe9d9f0952b761a1f7c24b0fe611e1343041adb6db4cb1b14ae66a"
+      url "https://github.com/Big-Time-Data/homebrew-tools/releases/download/v0.0.19/mcpq_darwin_arm64.tar.gz"
+      sha256 "45afb0a119bf5a09c88f25289e95d0c6809bb163dad2f7955d7fa611b39eede9"
 
       define_method(:install) do
         bin.install "mcpq"
@@ -28,15 +28,15 @@ class Mcpq < Formula
 
   on_linux do
     if Hardware::CPU.intel? && Hardware::CPU.is_64_bit?
-      url "https://github.com/Big-Time-Data/homebrew-tools/releases/download/v0.0.18/mcpq_linux_amd64.tar.gz"
-      sha256 "a0c84dc6a1238a5094b00a09efc0f7ee2373451dc733ed0992bacc55cd13a332"
+      url "https://github.com/Big-Time-Data/homebrew-tools/releases/download/v0.0.19/mcpq_linux_amd64.tar.gz"
+      sha256 "d75ef6fc23edd1107eb530beda68bf91c00e69c0dc7eb654ffc0cd6c39a841d3"
       define_method(:install) do
         bin.install "mcpq"
       end
     end
     if Hardware::CPU.arm? && Hardware::CPU.is_64_bit?
-      url "https://github.com/Big-Time-Data/homebrew-tools/releases/download/v0.0.18/mcpq_linux_arm64.tar.gz"
-      sha256 "2881cfe9db79dd3fe1297d33844846d1011545ee603b5ccb00dc350787df2a67"
+      url "https://github.com/Big-Time-Data/homebrew-tools/releases/download/v0.0.19/mcpq_linux_arm64.tar.gz"
+      sha256 "a3cd3f3a0077cf5354fae110262cd76c95454489b7441161d9b61326b83db9f2"
       define_method(:install) do
         bin.install "mcpq"
       end
