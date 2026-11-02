@@ -1,28 +1,28 @@
 class BigTimerCli < Formula
   desc "Command-line client for the BigTimer team server"
   homepage "https://github.com/Big-Time-Data/big-timer-releases"
-  version "1.0.2"
+  version "1.0.3"
   license :cannot_represent
 
   on_macos do
     on_arm do
       url "https://github.com/Big-Time-Data/big-timer-releases/releases/download/cli-v#{version}/big-timer-cli_#{version}_darwin_arm64.tar.gz"
-      sha256 "e1902fa5b56f25ce7c9ce1b02b76950d9ba78e2d1642daec2acb5ef17e653110"
+      sha256 "4b247d4044a610008b9950042ba01e8d2fb199ffb2d8e7f424f2d7095c55466a"
     end
     on_intel do
       url "https://github.com/Big-Time-Data/big-timer-releases/releases/download/cli-v#{version}/big-timer-cli_#{version}_darwin_amd64.tar.gz"
-      sha256 "0d3679efd2e5a20843ab1a794b781c2097bbd76cca5cae9671514547c8b90ca0"
+      sha256 "f2413369c8ffb825a2abd89843a405d21ab2134f6fad013188264cec328618a1"
     end
   end
 
   on_linux do
     on_arm do
       url "https://github.com/Big-Time-Data/big-timer-releases/releases/download/cli-v#{version}/big-timer-cli_#{version}_linux_arm64.tar.gz"
-      sha256 "d72c4f4276dccbf4f19fedc3dc92b8e445c1bfc6bb9a77efa4601b4128f42d95"
+      sha256 "eef49f44f293c17dd1b7d10733e72ea05885c41dc40e1882fe6f5c7290e430e5"
     end
     on_intel do
       url "https://github.com/Big-Time-Data/big-timer-releases/releases/download/cli-v#{version}/big-timer-cli_#{version}_linux_amd64.tar.gz"
-      sha256 "84aacfbca7899ff2114432922d983e737f3897550bdffa1ab4f048dc88837fb1"
+      sha256 "f7f302df61cb8f0068b6e17206983317ed9ce111f1d57bafa6f90975c169478f"
     end
   end
 
