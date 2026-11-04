@@ -2,6 +2,22 @@
 
 Homebrew tools by BTD.
 
+## dts
+
+Data Tool Suite: a web IDE and MCP server for dbt projects (macOS only).
+
+```sh
+brew install --cask big-time-data/tools/dts
+dts
+```
+
+The cask installs two binaries:
+
+- `dts` starts the web IDE. `dts --mcp` starts the MCP server.
+- `dts_mcp` is a standalone MCP server with the Claude Code hooks.
+
+The cask updates automatically on each stable release.
+
 ## mcpq
 
 Let an LLM query a customer's warehouse and find the context it needs.
