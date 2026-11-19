@@ -1,6 +1,6 @@
 cask "big-timer" do
-  version "0.2.2"
-  sha256 "2b87ce9cc75ede587538d66d10ae44eae153150a2d46257339df43988e1502ec"
+  version "0.2.3"
+  sha256 "9f09e123224210cf5877548a617408a600047d057fee124751eb9d1f24b67bcb"
 
   url "https://github.com/Big-Time-Data/big-timer-releases/releases/download/v#{version}/BigTimer-#{version}.dmg"
   name "Big-Timer"
